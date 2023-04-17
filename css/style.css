@@ -1,12 +1,31 @@
-.titulo-navbar{
-    font-family: 'Syncopate', sans-serif;
+body {
+  background-color: #FFFFFF;
 }
 
-.social-icon{
-    max-width: 50px;
-    max-height: 50px;
+.navbar {
+  background-color: #f8f9fa !important;
+}
+
+footer {
+  background-color: #212529;
+}
+
+.social-icon {
+  max-width: 50px;
+  max-height: 50px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
+.card .zoom-animacion {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.zoom-animacion:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=style.css.map */

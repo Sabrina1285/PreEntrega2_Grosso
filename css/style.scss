@@ -1,0 +1,56 @@
+//variables
+$color-fondo: #FFFFFF;
+$color-navbar: #f8f9fa;
+$color-footer: #212529;
+$tamano-social-icon: 50px;
+
+
+$colores: (
+    black: #000000,
+    white: #FFFFFF
+);
+
+$noche: 'no';
+
+@if ($noche == 'si') {
+    $color-fondo: #000000;
+    $color-navbar: #909090;
+
+    body {
+        color: map-get($colores, white);
+    }
+
+    .card {
+        background-color: map-get($colores, black);
+    }
+}
+
+body {
+    background-color: $color-fondo;
+}
+
+.navbar { 
+    background-color: $color-navbar !important;
+}
+
+footer{
+    background-color: $color-footer;
+}
+
+.social-icon{
+    max-width: $tamano-social-icon;
+    max-height: $tamano-social-icon;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card .zoom-animacion {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom-animacion:hover {
+    transform: scale(1.1);
+}
